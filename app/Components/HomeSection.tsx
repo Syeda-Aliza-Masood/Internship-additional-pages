@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import { useRouter } from "next/navigation"
 function HomeSection() {
 
@@ -23,7 +24,7 @@ function HomeSection() {
             {/* All 8 Boxes */}
             {[6, 7, 8, 9, 10, 11, 12, 13].map((num, index) => (
               <div key={index} className="relative">
-                <img
+                <Image
                   src={`${num}.png`}
                   alt={`Box ${index + 1}`}
                   className="w-full h-36 md:h-full object-cover rounded-md transition-transform duration-300 hover:scale-105"

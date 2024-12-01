@@ -50,7 +50,7 @@ function HeroSection() {
           {/* First Section - Buttons */}
           <div className="flex flex-col space-y-2 bg-blue-100 p-4 rounded-md text-center">
             <p className="text-gray-800 font-semibold">Hi user</p>
-            <p className="text-gray-800 font-semibold">Let's get started</p>
+            <p className="text-gray-800 font-semibold">Lets get started</p>
             <button className="px-4 py-2 bg-blue-700 text-white rounded-lg border border-blue-700 hover:bg-white hover:text-blue-700">
               Join Now
             </button>
