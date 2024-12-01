@@ -4,6 +4,7 @@ import Navbar from "./NavBar";
 import Secondbar from "./Secondbar";
 import SubscribeSection from "./Subscribe";
 import Footer from "./Footer";
+import Image from 'next/image';
 
 export default function ProductDetailsPage() {
   // Product details sample data
@@ -77,7 +78,7 @@ export default function ProductDetailsPage() {
               onMouseEnter={() => setZoom(true)}
               onMouseLeave={() => setZoom(false)}
             >
-              <img
+              <Image
                 src={product.image}
                 alt={product.title}
                 className="w-full h-full object-cover"
@@ -140,7 +141,7 @@ export default function ProductDetailsPage() {
                 className="bg-white border rounded shadow p-4 hover:shadow-lg"
               >
                 {/* Adjusted Image Size */}
-                <img
+                <Image
                   src={related.image}
                   alt={related.name}
                   className="w-full h-50 object-cover mb-2 rounded-lg" // Reduced size and added rounded corners

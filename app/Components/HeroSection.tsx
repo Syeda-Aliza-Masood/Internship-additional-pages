@@ -1,3 +1,4 @@
+import Image from 'next/image';
 function HeroSection() {
   return (
     <div className="flex justify-center items-center mt-3 mb-3">
@@ -37,7 +38,7 @@ function HeroSection() {
 
         {/* Middle Section - Image */}
         <div className="w-full lg:w-3/4 bg-white flex items-center justify-center">
-          <img
+          <Image
             src="banner.png"
             alt="Hero Image"
             className="w-full h-auto object-cover rounded-t-md lg:rounded-none"
@@ -48,7 +49,7 @@ function HeroSection() {
         <div className="w-full lg:w-1/4 bg-white p-4 flex flex-col space-y-4 rounded-b-lg lg:rounded-r-lg">
           {/* First Section - Buttons */}
           <div className="flex flex-col space-y-2 bg-blue-100 p-4 rounded-md text-center">
-            <p className="text-gray-800 font-semibold">Hi, user</p>
+            <p className="text-gray-800 font-semibold">Hi user</p>
             <p className="text-gray-800 font-semibold">Let's get started</p>
             <button className="px-4 py-2 bg-blue-700 text-white rounded-lg border border-blue-700 hover:bg-white hover:text-blue-700">
               Join Now

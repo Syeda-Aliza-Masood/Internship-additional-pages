@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image';
 import Link from "next/link";
 
 function Secondbar() {
@@ -8,7 +8,7 @@ function Secondbar() {
             <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
                 {/* Left Content */}
                 <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4 w-full md:w-auto">
-                    <img src="/menu.png" alt="Category Icon" className="h-6 w-6 mb-2 md:mb-0" />
+                    <Image src="/menu.png" alt="Category Icon" className="h-6 w-6 mb-2 md:mb-0" />
                     <Link href="/All Category" className="text-sm text-black hover:text-blue-600">
                         All Category
                     </Link>

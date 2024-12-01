@@ -1,5 +1,6 @@
 'use client'
 import { useRouter } from "next/navigation"
+import Image from 'next/image';
 function ElectronicSection() {
 
   const router=useRouter()
@@ -24,7 +25,7 @@ function ElectronicSection() {
             {/* All 8 Boxes */}
             {[14, 15, 16, 17, 18, 19, 20, 21].map((num, index) => (
               <div key={index} className="relative">
-                <img
+                <Image
                   src={`${num}.png`}
                   alt={`Box ${index + 1}`}
                   className="w-full h-36 md:h-full object-cover rounded-md transition-transform duration-300 hover:scale-105"

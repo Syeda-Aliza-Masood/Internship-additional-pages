@@ -1,3 +1,4 @@
+import Image from 'next/image';
 const DealsSection = () => {
   return (
     <div className="flex justify-center items-center px-4">
@@ -38,11 +39,7 @@ const DealsSection = () => {
               key={index}
               className={`flex flex-col items-center justify-center bg-white border-b md:border-b-0 md:border-r border-gray-300 p-2`}
             >
-              <img
-                src={`${index + 1}.png`}
-                alt={`Deal ${index + 1}`}
-                className={`w-full max-h-[150px] object-cover rounded-md transition-transform duration-300 hover:scale-105`}
-              />
+              <Image src={`${index + 1}.png`} alt={`Deal ${index + 1}`} className={`w-full max-h-[150px] object-cover rounded-md transition-transform duration-300 hover:scale-105`}/>
               <p className="mt-2 text-sm md:text-base text-center">
                 {["Smart Watches", "Laptops", "GoPro Cameras", "Headphones", "Canon Cameras"][index]}
               </p>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 function SubscribeSection() {
     return (
       <div className="w-full sm:w-[650px] md:w-[900px] lg:w-[1350px] h-auto mx-auto mt-6 bg-gray-300 p-4 flex flex-col justify-center items-center">
@@ -21,7 +22,7 @@ function SubscribeSection() {
               className="w-full sm:w-[350px] h-[40px] pl-10 pr-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             {/* Email Icon */}
-            <img
+            <Image
               src="/email.png" // Replace with your email icon image path
               alt="Email Icon"
               className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5"

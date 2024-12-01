@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import { useState } from "react";
 import Navbar from "./NavBar";
 import Secondbar from "./Secondbar";
@@ -66,7 +67,7 @@ export default function ProductListingPage() {
           <div className="flex space-x-4 mt-20">
             {/* Shopping Cart Button with Icon */}
             <div className="text-center">
-              <img
+              <Image
                 src="/images/shopping.png" // Replace with your cart icon image path
                 alt="Shopping Cart"
                 className="mx-auto mb-6 w-12 h-12"
@@ -78,7 +79,7 @@ export default function ProductListingPage() {
 
             {/* User Account Button with Icon */}
             <div className="text-center">
-              <img
+              <Image
                 src="/images/user.jpg" // Replace with your user icon image path
                 alt="User Account"
                 className="mx-auto mb-6 w-12 h-12"
@@ -98,7 +99,7 @@ export default function ProductListingPage() {
                 key={product.id}
                 className="bg-white border rounded shadow p-4 hover:shadow-lg"
               >
-                <img
+                <Image
                   src={product.image}
                   alt={product.name}
                   className="w-full h-50 object-cover mb-2 rounded-lg"

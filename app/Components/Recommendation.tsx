@@ -1,3 +1,4 @@
+import Image from 'next/image';
 function Recommendation() {
     return (
       <div className="w-full max-w-[1180px] mx-auto mt-3 bg-gray-100 p-4 rounded-lg shadow-lg">
@@ -14,7 +15,7 @@ function Recommendation() {
               key={index}
               className="w-full h-[310px] bg-white rounded-lg shadow-md flex items-center justify-center transform hover:scale-105 transition-transform duration-300"
             >
-              <img
+              <Image
                 src={`${23 + index}.png`}
                 alt={`Recommended Item ${index + 1}`}
                 className="w-full h-full object-cover rounded-lg"

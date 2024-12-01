@@ -1,17 +1,18 @@
+import Image from 'next/image';
 function Footer() {
   return (
     <div className="w-full mx-auto mt-6 bg-gray-100 p-4 border-b-4 border-blue-500"> {/* Blue border added here */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         {/* Column 1: Logo, Text, Image */}
         <div className="flex flex-col items-start mb-3 mt-8">
-          <img
+          <Image
             src="/logo.png" // Replace with your logo image
             alt="Logo"
             className="max-w-full"
           />
           <p className="text-sm mt-1 mb-1">Best information about the company</p>
           <p className="text-sm mt-1 mb-1">Gies here lorem ipsum is</p>
-          <img
+          <Image
             src="/icon.png" // Replace with your 200x32 image
             alt="Footer Image"
             className="w-[200px] h-[32px] mt-5"
@@ -20,35 +21,35 @@ function Footer() {
 
         {/* Column 2 - 6: Images */}
         <div className="flex items-center justify-center">
-          <img
+          <Image
             src="/about.png" // Replace with your image
             alt="Image 1"
             className="w-[81px] h-[137px] object-cover max-w-full"
           />
         </div>
         <div className="flex items-center justify-center">
-          <img
+          <Image
             src="/partnership.png" // Replace with your image
             alt="Image 2"
             className="w-[90px] h-[137px] object-cover max-w-full"
           />
         </div>
         <div className="flex items-center justify-center">
-          <img
+          <Image
             src="/info.png" // Replace with your image
             alt="Image 3"
             className="w-[108px] h-[137px] object-cover max-w-full"
           />
         </div>
         <div className="flex items-center justify-center">
-          <img
+          <Image
             src="/user.png" // Replace with your image
             alt="Image 4"
             className="w-[78px] h-[137px] object-cover max-w-full"
           />
         </div>
         <div className="flex items-center justify-center">
-          <img
+          <Image
             src="/app.png" // Replace with your image
             alt="Image 5"
             className="w-[124px] h-[129px] object-cover max-w-full"

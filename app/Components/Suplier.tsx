@@ -1,3 +1,4 @@
+import Image from 'next/image';
 function Suplier() {
     return (
       <div className="w-full max-w-[1177px] mx-auto mt-6 bg-gray-100 p-4 rounded-lg shadow-lg">
@@ -26,7 +27,7 @@ function Suplier() {
             >
               {/* Link with Flag */}
               <a href={item.link} target="_blank" rel="noopener noreferrer">
-                <img
+                <Image
                   src={item.flag}
                   alt={`Flag ${index + 1}`}
                   className="w-[120px] h-auto md:w-[221px] md:h-[36px] object-contain"

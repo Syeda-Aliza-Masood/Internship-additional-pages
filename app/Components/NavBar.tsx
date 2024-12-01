@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image';
 function Navbar() {
     return (
         <nav className="bg-white text-black  ">
@@ -7,7 +7,7 @@ function Navbar() {
                 {/* Logo with Image */}
                 <div className="text-2xl font-bold">
                     <a href="#" className="hover:text-gray-300">
-                        <img
+                        <Image
                             src="../logo.png" // Replace with your logo image URL
                             alt="MyWebsite Logo"
                             className="h-10 w-auto"
@@ -54,25 +54,25 @@ function Navbar() {
                     <ul className="flex space-x-6">
                         <li className="flex flex-col items-center">
                             <a href="#" className="text-sm hover:text-gray-300 flex flex-col items-center">
-                                <img src="../pro.png" alt="Profile" className="h-5 w-5 mb-1" />
+                                <Image src="../pro.png" alt="Profile" className="h-5 w-5 mb-1" />
                                 <span>Profile</span>
                             </a>
                         </li>
                         <li className="flex flex-col items-center">
                             <a href="#" className="text-sm hover:text-gray-300 flex flex-col items-center">
-                                <img src="../msg.png" alt="Message" className="h-5 w-5 mb-1" />
+                                <Image src="../msg.png" alt="Message" className="h-5 w-5 mb-1" />
                                 <span>Message</span>
                             </a>
                         </li>
                         <li className="flex flex-col items-center">
                             <a href="#" className="text-sm hover:text-gray-300 flex flex-col items-center">
-                                <img src="../order.png" alt="Order" className="h-5 w-5 mb-1" />
+                                <Image src="../order.png" alt="Order" className="h-5 w-5 mb-1" />
                                 <span>Order</span>
                             </a>
                         </li>
                         <li className="flex flex-col items-center">
                             <a href="#" className="text-sm hover:text-gray-300 flex flex-col items-center">
-                                <img src="../my cart.png" alt="My Cart" className="h-5 w-5 mb-1" />
+                                <Image src="../my cart.png" alt="My Cart" className="h-5 w-5 mb-1" />
                                 <span>My Cart</span>
                             </a>
                         </li>
